@@ -1,4 +1,9 @@
 //this is a IIFE 
+/*
+example usage
+<script src="tickerWidget.js" data-base="btc" data-quote="usdt"></script>
+*/
+
 (function() {
   // Get the current script tag that loaded this JS
   const script = document.currentScript;
