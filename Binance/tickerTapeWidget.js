@@ -1,4 +1,7 @@
 /*
+use this script in an html file with like;
+<script src="tickerTapeWidget.js" data-bases="btc,xrp,ltc,ada" data-quote="usdt"></script>
+
 -The base endpoint is: wss://stream.binance.com:9443 or wss://stream.binance.com:443.
 -Streams can be accessed either in a single raw stream or in a combined stream.
 -Raw streams are accessed at /ws/<streamName>
