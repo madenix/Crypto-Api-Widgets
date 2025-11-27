@@ -8,37 +8,9 @@
 <body>
   <h1>Crypto Prices From Binance:</h1>
   <b>Ticker Tape</b><br>
-  <hr/><script src="tickerTapeWidget.js" data-bases="btc,xrp,ltc,ada" data-quote="usdt"></script><hr/>
+  <hr/><script src="tickerTapeWidget.js" data-bases="btc,xrp,ltc,ada,shib" data-quote="usdt"></script><hr/>
   <br>
   <b>Live price for a symbol</b><br>
   <script src="tickerWidget.js" data-base="btc" data-quote="usdt"></script>
-  <br><br>
-  <b>Current Price For BTC</b><br>
-  <div id="price">Loading...</div>
-  <br/>
-  <b>Last 3 Candle Datas For BTC</b>
-  <pre id="candle">Loading...</pre>
-  <br>
-  <b>Last 24 Hour Data for BTC</b>
-  <pre id="24hour">Loading...</pre>
-  <script>
-    async function showBinancePrice(){
-      const price = await getPriceBinanceAsync("BTC", "USDT");
-      document.getElementById("price").innerHTML = "BTC : " + price;
-    }
-    showBinancePrice();
-
-    async function showBinanceCandles(){
-      const candles = await getCandleBinanceAsyn("BTC","USDT","1h","3");
-      document.getElementById("candle").innerHTML = JSON.stringify(candles, null,2);
-    }
-    showBinanceCandles();
-
-    async function showBinance24hr(){
-      const priceData = await getBinance24hr("BTC", "USDT");
-      document.getElementById("24hour").textContent = JSON.stringify(priceData, null, 2);
-    }
-    showBinance24hr();
-  </script>
 </body>
 </html>
