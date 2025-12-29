@@ -5,6 +5,7 @@ This repository hosts simple **HTML/JavaScript** demos showcasing how to interac
 ---
 
 ## 🌟 Features
+https://madenix.github.io/Crypto-Api-Widgets/
 
 * **Diversity:** Includes integration examples for several major platforms:
     * **CoinGecko** (Data Provider)
