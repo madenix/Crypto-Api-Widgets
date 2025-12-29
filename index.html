@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Binance WebSocket Fiyat Widgetları</title>
+    <title>Binance WebSocket Price Widgets</title>
     <style>
-        /* Modern & Dark Temalı Saf CSS */
+        /* Modern & Dark Themed Pure CSS */
         :root {
             --bg: #0b0e11;
             --card-bg: #1e2329;
@@ -59,7 +59,7 @@
             margin-bottom: 15px;
         }
 
-        /* Kod Bloğu Tasarımı */
+        /* Code Block Styling */
         pre {
             background: var(--code-bg);
             color: #f8f8f2;
@@ -86,15 +86,15 @@
 <div class="container">
     <header>
         <h1>Binance Price Widgets</h1>
-        <p>Binance API kullanarak hazırlanan gerçek zamanlı kripto para takip scriptleri.</p>
+        <p>Real-time cryptocurrency tracking scripts built using the Binance API.</p>
     </header>
 
     <section>
-        <h2>1. Kayan Fiyat Şeridi (Ticker Tape)</h2>
-        <p class="desc">Çoklu sembol desteğiyle ekranın üstünde veya istediğiniz bir alanda kayan fiyat bandı oluşturur.</p>
+        <h2>1. Scrolling Price Ticker (Ticker Tape)</h2>
+        <p class="desc">Creates a scrolling price bar that supports multiple symbols and can be placed at the top of the page or anywhere you like.</p>
         
         <div class="demo-box">
-            <span class="label">CANLI ÖNİZLEME</span>
+            <span class="label">LIVE PREVIEW</span>
             <script 
               src="https://cdn.jsdelivr.net/gh/madenix/Crypto-Api-Widgets@main/Binance/tickerTapeWidget.js" 
               data-bases="btc,eth,bnb,sol,xrp,ada" 
@@ -102,8 +102,8 @@
             </script>
         </div>        
 
-        <h3>Nasıl Kullanılır?</h3>
-        <p>Aşağıdaki kod snippet'ini HTML sayfanızın herhangi bir yerine yapıştırın:</p>
+        <h3>How to Use</h3>
+        <p>Paste the following code snippet anywhere in your HTML page:</p>
         <pre>
 <span class="code-tag">&lt;script</span> 
   <span class="code-attr">src</span>=<span class="code-val">"https://cdn.jsdelivr.net/gh/madenix/Crypto-Api-Widgets@main/Binance/tickerTapeWidget.js"</span> 
@@ -114,12 +114,12 @@
     <hr>
 
     <section>
-        <h2>2. Tekil Canlı Fiyat Kartı</h2>
-        <p class="desc">Belirli bir işlem çiftini vurgulamak için kullanılan minimal fiyat kutusu.</p>
+        <h2>2. Single Live Price Card</h2>
+        <p class="desc">A minimal price widget used to highlight a specific trading pair.</p>
 
         <div class="demo-box" style="display: flex; justify-content: center; align-items: center; min-height: 150px;">
             <div style="text-align: center;">
-                <span class="label">CANLI ÖNİZLEME</span>
+                <span class="label">LIVE PREVIEW</span>
                 <br>
 
 <script 
@@ -130,8 +130,8 @@
             </div>
         </div>
 
-        <h3>Nasıl Kullanılır?</h3>
-        <p>Tek bir kripto parayı listelemek için bu yapıyı kullanın:</p>
+        <h3>How to Use</h3>
+        <p>Use the following structure to display a single cryptocurrency:</p>
         <pre>
 <span class="code-tag">&lt;script</span> 
   <span class="code-attr">src</span>=<span class="code-val">"https://cdn.jsdelivr.net/gh/madenix/Crypto-Api-Widgets@main/Binance/tickerWidget.js"</span> 
@@ -140,7 +140,7 @@
     </section>
 
     <footer style="margin-top: 100px; text-align: center; color: var(--text-dim); font-size: 0.8rem; padding-bottom: 40px;">
-        &copy; 2024 Binance Price Helper - Tüm veriler Binance WebSocket API üzerinden canlı alınmaktadır.
+        &copy; 2024 Binance Price Helper – All data is streamed live via the Binance WebSocket API.
     </footer>
 </div>
 
