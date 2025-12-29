@@ -51,10 +51,10 @@ example usage
 
   // Open WebSocket connection
   const tickerSocket = new WebSocket(tickerUrl);
-
   // Create a container div for the ticker
   var tickerElement = document.createElement("div");
-  document.body.appendChild(tickerElement); // Append container to the page
+  //document.body.appendChild(tickerElement); // Append container to the page
+  (script.parentNode || document.body).insertBefore(tickerElement, script);
   tickerElement.style.display = "inline-block";
   tickerElement.style.border = "1px solid #ccc";
   tickerElement.style.borderRadius = "5px";
